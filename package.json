@@ -6,7 +6,7 @@
     "dev:dev": "env-cmd -f ./env-files/.env.dev next dev",
     "dev:test": "env-cmd -f ./env-files/.env.test next dev",
     "dev:staging": "env-cmd -f ./env-files/.env.staging next dev",
-    "dev:preview": "env-cmd -f ./env-files/.env.preview next dev",
+    "dev:preview": "env-cmd next dev",
     "dev:prod": "env-cmd -f ./env-files/.env.prod next dev",
     "build:dev": "env-cmd -f ./env-files/.env.dev next build && next start",
     "build:test": "env-cmd -f .env.test next build",
