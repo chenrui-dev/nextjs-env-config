@@ -3,8 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev:dev": "env-cmd -f ./env-files/.env.dev next dev",
+    "dev:test": "env-cmd -f ./env-files/.env.test next dev",
+    "dev:staging": "env-cmd -f ./env-files/.env.staging next dev",
+    "dev:preview": "env-cmd -f ./env-files/.env.preview next dev",
+    "dev:prod": "env-cmd -f ./env-files/.env.prod next dev",
+    "build:dev": "env-cmd -f ./env-files/.env.dev next build && next start",
+    "build:test": "env-cmd -f .env.test next build",
+    "build:staging": "env-cmd -f .env.staging next build",
+    "build:preview": "env-cmd -f ./env-files/.env.preview next build && next start",
+    "build:prod": "env-cmd -f .env.prod next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -15,6 +23,7 @@
   },
   "devDependencies": {
     "@types/react": "17.0.19",
+    "env-cmd": "^10.1.0",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.0",
     "typescript": "4.4.2"
