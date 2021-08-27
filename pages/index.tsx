@@ -3,8 +3,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-const RUNTIME = process.env.APP_ENV || "default-xx";
-const VAR = process.env.APP_VAR || "default-var-x1";
+const APP_ENV = process.env.APP_ENV || "default-xx";
+const APP_VAR = process.env.APP_VAR || "default-var-x1";
+
+console.log(`APP_ENV is ${APP_ENV}`);
+console.log(`APP_VAR is ${APP_VAR}`);
 
 const Home: NextPage = () => {
   return (
@@ -21,8 +24,8 @@ const Home: NextPage = () => {
         </h1>
 
         <p className={styles.description}>
-          {`RUNTIME is ${RUNTIME}`}
-          {`VAR is ${VAR}`}
+          {`APP_ENV is ${APP_ENV}`}
+          {`APP_VAR is ${APP_VAR}`}
         </p>
       </main>
 
