@@ -5,6 +5,8 @@ import styles from '../styles/Home.module.css'
 
 const APP_ENV = process.env.APP_ENV || "default-xx";
 const APP_VAR = process.env.APP_VAR || "default-var-x1";
+const GOOGLE_URL = process.env.GOOGLE_URL;
+const MEETUP_HELP_URL = process.env.MEETUP_HELP_URL;
 
 console.log(`APP_ENV is ${APP_ENV}`);
 console.log(`APP_VAR is ${APP_VAR}`);
@@ -25,7 +27,15 @@ const Home: NextPage = () => {
 
         <p className={styles.description}>
           {`APP_ENV is ${APP_ENV}`}
+        </p>
+        <p className={styles.description}>
           {`APP_VAR is ${APP_VAR}`}
+        </p>
+        <p className={styles.description}>
+          {`GOOGLE_URL is ${GOOGLE_URL}`}
+        </p>
+        <p className={styles.description}>
+          {`MEETUP_HELP_URL is ${MEETUP_HELP_URL}`}
         </p>
       </main>
 
