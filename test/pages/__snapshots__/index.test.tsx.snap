@@ -26,7 +26,7 @@ exports[`Home page matches snapshot 1`] = `
       <p
         class="description"
       >
-        APP_VAR is test-var-abc
+        APP_VAR is default-var-x1
       </p>
       <p
         class="description"

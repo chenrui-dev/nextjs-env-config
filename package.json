@@ -20,18 +20,18 @@
     "check:test": "env-cmd -f .env.test jest",
     "check:type": "tsc --pretty --noEmit"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "yarn run check:type"
-    }
-  },
-  "lint-staged": {
-    "*.@(ts|tsx)": [
-      "yarn check:lint",
-      "yarn check:fmt"
-    ]
-  },
+  // "husky": {
+  //   "hooks": {
+  //     "pre-commit": "lint-staged",
+  //     "pre-push": "yarn run check:type"
+  //   }
+  // },
+  // "lint-staged": {
+  //   "*.@(ts|tsx)": [
+  //     "yarn check:lint",
+  //     "yarn check:fmt"
+  //   ]
+  // },
   "dependencies": {
     "next": "11.1.0",
     "react": "17.0.2",

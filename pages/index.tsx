@@ -12,6 +12,10 @@ const MEETUP_HELP_URL = process.env.MEETUP_HELP_URL;
 console.log(`APP_ENV is ${APP_ENV}`);
 // eslint-disable-next-line no-console
 console.log(`APP_VAR is ${APP_VAR}`);
+// eslint-disable-next-line no-console
+console.log(`GOOGLE_URL is ${GOOGLE_URL}`);
+// eslint-disable-next-line no-console
+console.log(`MEETUP_HELP_URL is ${MEETUP_HELP_URL}`);
 
 const Home: NextPage = () => {
   return (
