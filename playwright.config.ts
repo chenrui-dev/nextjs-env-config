@@ -2,6 +2,7 @@ import { PlaywrightTestConfig } from "@playwright/test";
 
 const config: PlaywrightTestConfig = {
   name: "Chrome Stable",
+  testDir: "e2e",
   use: {
     browserName: "chromium",
     // Test against Chrome Stable channel.

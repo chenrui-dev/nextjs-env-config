@@ -17,7 +17,7 @@
     "check:all": "yarn check:lint && yarn check:type && yarn check:test",
     "check:fmt": "prettier --write .",
     "check:lint": "next lint",
-    "check:test": "env-cmd -f .env.test jest",
+    "check:test": "env-cmd -f .env.test jest -c jest.config.js",
     "check:test:e2e": "npx playwright test",
     "check:type": "tsc --pretty --noEmit"
   },
