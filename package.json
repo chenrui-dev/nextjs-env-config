@@ -20,18 +20,6 @@
     "check:test": "env-cmd -f .env.test jest",
     "check:type": "tsc --pretty --noEmit"
   },
-  // "husky": {
-  //   "hooks": {
-  //     "pre-commit": "lint-staged",
-  //     "pre-push": "yarn run check:type"
-  //   }
-  // },
-  // "lint-staged": {
-  //   "*.@(ts|tsx)": [
-  //     "yarn check:lint",
-  //     "yarn check:fmt"
-  //   ]
-  // },
   "dependencies": {
     "next": "11.1.0",
     "react": "17.0.2",
@@ -49,11 +37,9 @@
     "eslint": "^7.19.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-react": "^7.19.0",
-    "husky": "^4.2.3",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.0.4",
     "jest-watch-typeahead": "^0.6.1",
-    "lint-staged": "^10.0.10",
     "prettier": "^2.0.2",
     "typescript": "^4.1.3"
   }
