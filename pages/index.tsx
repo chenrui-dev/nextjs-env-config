@@ -8,7 +8,9 @@ const APP_VAR = process.env.APP_VAR || "default-var-x1";
 const GOOGLE_URL = process.env.GOOGLE_URL;
 const MEETUP_HELP_URL = process.env.MEETUP_HELP_URL;
 
+// eslint-disable-next-line no-console
 console.log(`APP_ENV is ${APP_ENV}`);
+// eslint-disable-next-line no-console
 console.log(`APP_VAR is ${APP_VAR}`);
 
 const Home: NextPage = () => {

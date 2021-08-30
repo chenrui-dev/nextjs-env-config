@@ -14,21 +14,22 @@
     "build:preview": "env-cmd -f .env.preview next build && next start",
     "build:prod": "env-cmd -f .env.prod next build",
     "start": "next start",
-    "lint": "next lint",
-    "format": "prettier --write .",
-    "test": "jest",
-    "test-all": "yarn lint && yarn type-check && yarn test"
+    "check:all": "yarn check:lint && yarn check:type && yarn check:test",
+    "check:fmt": "prettier --write .",
+    "check:lint": "next lint",
+    "check:test": "jest",
+    "check:type": "tsc --pretty --noEmit"
   },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "yarn run type-check"
+      "pre-push": "yarn run check:type"
     }
   },
   "lint-staged": {
     "*.@(ts|tsx)": [
-      "yarn lint",
-      "yarn format"
+      "yarn check:lint",
+      "yarn check:fmt"
     ]
   },
   "dependencies": {
