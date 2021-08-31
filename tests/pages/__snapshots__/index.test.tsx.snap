@@ -36,7 +36,7 @@ exports[`Home page matches snapshot 1`] = `
       <h2
         id="meetupHelpUrl"
       >
-        MEETUP_HELP_URL is undefined
+        MEETUP_HELP_URL is default-meetup-help-url
       </h2>
       <h2
         id="nextPublicMeetupUrl"
