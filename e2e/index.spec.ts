@@ -20,7 +20,7 @@ test("basic test", async ({ page }) => {
 
   const h2MeetupHelpUrl = page.locator("#meetupHelpUrl");
   await expect(h2MeetupHelpUrl).toHaveText(
-    "MEETUP_HELP_URL is https://meetup.com/help"
+    "MEETUP_HELP_URL is default-meetup-help-url"
   );
 
   const h2NextPublicMeetupUrl = page.locator("#nextPublicMeetupUrl");
