@@ -13,34 +13,36 @@ exports[`Home page matches snapshot 1`] = `
       >
         Welcome to Next.js!
       </h1>
-      <h2>
+      <h2
+        id="config"
+      >
         config test
       </h2>
-      <p
-        class="description"
+      <h2
+        id="appEnv"
       >
         APP_ENV is test-abc
-      </p>
-      <p
-        class="description"
+      </h2>
+      <h2
+        id="appVar"
       >
         APP_VAR is default-var-x1
-      </p>
-      <p
-        class="description"
+      </h2>
+      <h2
+        id="googleUrl"
       >
         GOOGLE_URL is JEST_GOOGLE_URL
-      </p>
-      <p
-        class="description"
+      </h2>
+      <h2
+        id="meetupHelpUrl"
       >
         MEETUP_HELP_URL is undefined
-      </p>
-      <p
-        class="description"
+      </h2>
+      <h2
+        id="nextPublicMeetupUrl"
       >
         NEXT_PUBLIC_MEETUP_URL is JEST_NEXT_PUBLIC_MEETUP_URL
-      </p>
+      </h2>
     </main>
     <footer
       class="footer"
