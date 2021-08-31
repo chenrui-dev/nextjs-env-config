@@ -34,23 +34,23 @@ const Home: NextPage = () => {
           Welcome to Next.js!
         </h1>
 
-        <h2>config test</h2>
+        <h2 id="config">config test</h2>
 
-        <p className={styles.description}>
+        <h2 id="appEnv">
           {`APP_ENV is ${APP_ENV}`}
-        </p>
-        <p className={styles.description}>
+        </h2>
+        <h2 id="appVar">
           {`APP_VAR is ${APP_VAR}`}
-        </p>
-        <p className={styles.description}>
+        </h2>
+        <h2 id="googleUrl">
           {`GOOGLE_URL is ${GOOGLE_URL}`}
-        </p>
-        <p className={styles.description}>
+        </h2>
+        <h2 id="meetupHelpUrl">
           {`MEETUP_HELP_URL is ${MEETUP_HELP_URL}`}
-        </p>
-        <p className={styles.description}>
+        </h2>
+        <h2 id="nextPublicMeetupUrl">
           {`NEXT_PUBLIC_MEETUP_URL is ${NEXT_PUBLIC_MEETUP_URL}`}
-        </p>
+        </h2>
       </main>
 
       <footer className={styles.footer}>
