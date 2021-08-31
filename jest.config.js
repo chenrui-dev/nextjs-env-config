@@ -1,5 +1,6 @@
 module.exports = {
   roots: ['<rootDir>/tests/'],
+  globalSetup: './tests/setup.js',
   testEnvironment: 'jsdom',
   moduleFileExtensions: ['ts', 'tsx', 'js', 'json', 'jsx'],
   testPathIgnorePatterns: ['<rootDir>[/\\\\](node_modules|.next)[/\\\\]'],
