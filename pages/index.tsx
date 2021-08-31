@@ -7,6 +7,7 @@ const APP_ENV = process.env.APP_ENV || "default-xx";
 const APP_VAR = process.env.APP_VAR || "default-var-x1";
 const GOOGLE_URL = process.env.GOOGLE_URL;
 const MEETUP_HELP_URL = process.env.MEETUP_HELP_URL;
+const NEXT_PUBLIC_MEETUP_URL = process.env.NEXT_PUBLIC_MEETUP_URL;
 
 // eslint-disable-next-line no-console
 console.log(`APP_ENV is ${APP_ENV}`);
@@ -16,6 +17,8 @@ console.log(`APP_VAR is ${APP_VAR}`);
 console.log(`GOOGLE_URL is ${GOOGLE_URL}`);
 // eslint-disable-next-line no-console
 console.log(`MEETUP_HELP_URL is ${MEETUP_HELP_URL}`);
+// eslint-disable-next-line no-console
+console.log(`NEXT_PUBLIC_MEETUP_URL is ${NEXT_PUBLIC_MEETUP_URL}`);
 
 const Home: NextPage = () => {
   return (
@@ -44,6 +47,9 @@ const Home: NextPage = () => {
         </p>
         <p className={styles.description}>
           {`MEETUP_HELP_URL is ${MEETUP_HELP_URL}`}
+        </p>
+        <p className={styles.description}>
+          {`NEXT_PUBLIC_MEETUP_URL is ${NEXT_PUBLIC_MEETUP_URL}`}
         </p>
       </main>
 
