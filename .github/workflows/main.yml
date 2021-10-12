@@ -17,4 +17,6 @@ jobs:
       - name: Install playwright
         run: npx playwright install
       - name: Run E2E tests
-        run: yarn check:test:e2e
+        run: |
+          echo "APP_VAR=${{secrets.DUMMY_VALUE}}" > .env
+          yarn check:test:e2e
